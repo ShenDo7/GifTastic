@@ -1,0 +1,11 @@
+
+.animal{
+    height : 40px;
+    width: 40px;
+}
+.clickable{
+    display: flex;
+    height : 200px;
+    width: 200px;
+    margin: 10px;
+}
