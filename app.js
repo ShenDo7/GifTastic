@@ -46,20 +46,19 @@ $(document).ready(function () {
           `
         );
       });
-      $(document).on("click", ".clickable", function () {
-        console.log($(this).attr("data-state"));
-        if ($(this).attr("data-state") === "still") {
-          $(this).attr("data-state", "animate");
-          $(this).attr("src", $(this).attr("urlAnimate"));
-        } else {
-          $(this).attr("data-state", "still");
-          $(this).attr("src", $(this).attr("urlStill"));
-        }
-      });
     });
   });
   //4 when GIF is clicked, start animation, when clicked again, stop animation
-
+  $(document).on("click", ".clickable", function () {
+    console.log($(this).attr("data-state"));
+    if ($(this).attr("data-state") === "still") {
+      $(this).attr("data-state", "animate");
+      $(this).attr("src", $(this).attr("urlAnimate"));
+    } else {
+      $(this).attr("data-state", "still");
+      $(this).attr("src", $(this).attr("urlStill"));
+    }
+  });
   //5 display rating of Gif
 
   //6 add form to page that takes user input on search word
