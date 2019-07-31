@@ -1,11 +1,18 @@
-
-.animal{
-    height : 40px;
-    width: 40px;
-}
-.clickable{
+.animal {
+    height: 40px;
+    width: 80px;
+  }
+  .clickable {
     display: flex;
-    height : 200px;
+    height: 200px;
     width: 200px;
     margin: 10px;
-}
+    background: gray;
+  }
+  .imgdiv {
+    width: 20%;
+    height: auto;
+    float: left;
+    background: gray;
+    text-align: center;
+  }
